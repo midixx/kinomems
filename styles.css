@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #05061b;
+    padding: 100px 30px;
+}
+
+.movie-card {
+    display: inline-block;
+    width: 23%;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s linear; 
+}
+
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.card1 {
+    background-image: url("img/1/pudge.png");
+}
+
+.card1.effect:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("img/1/9cdd6dc5e7aa2d023d4753.jpeg");
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+    background-position: center;
+    pointer-events: none;
+}
+
+.card2 {
+    background-image: url("img/2/12524.970.png");
+}
+
+.card2:hover {
+    background-image: url("img/2/Flag_of_Russia.png");
+}
+
+.card3 {
+    background-image: url("img/3/20110329_zaf_mg1_042-467x697.jpg");
+}
+
+.card3:hover {
+    background-image: url("img/3/yaytso-1.jpg");
+}
+
+.card4 {
+    background-image: url("img/4/156784758319213577.jpg");
+}
+
+.card4.effect:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("img/4/1648653730_1-kartinkof-club-p-dota-smeshnie-kartinki-1.png");
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    pointer-events: none;
+    background-position: center;
+}
+
+.card5 {
+    background-image: url("img/5/un80Kzr-pic.jpg");
+}
+
+.card5:hover {
+    background-image: url("img/5/unnamed-13-300x300.jpg");
+}
+
+.effect:hover:before {
+    opacity: 1;
+}
+
+
+
+
